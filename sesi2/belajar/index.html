@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-size: 70px;
+        color: #446f44;
+      }
+      .title {
+        color: green;
+        font-size: 50px;
+      }
+      #judul {
+        color: blue;
+        font-size: 100px;
+      }
+      .article h1 {
+        color: aquamarine;
+        font-size: 60px;
+      }
+
+      .box1 {
+        background-color: red;
+        color: white;
+        /* padding: atas kanan bawah kiri */
+        padding: 20px;
+        /* padding: atas-bawah, kiri-kanan */
+        /* padding: 20px 40px; */
+        /* padding: atas, kiri-kanan, bawah */
+        /* padding: 20px 40px 60px; */
+        /* padding: atas, kanan, bawah, kiri */
+        /* padding: 20px 20px 20px 20px; */
+
+        /* padding-left: 20px; */
+        /* padding-bottom: 20px; */
+        /* padding-top: 10px; */
+      }
+      .box1 h1 {
+        color: white;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .box2 {
+        background-color: blue;
+        color: white;
+        margin: 20px;
+      }
+      .box2 h1 {
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
+      }
+      .box2:hover {
+        background-color: green;
+        text-align: center;
+        margin: 50px;
+      }
+
+      a:hover {
+        color: red;
+      }
+      a:visited {
+        color: yellow;
+      }
+      a:active {
+        color: green;
+      }
+
+      .floating-widget {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        border-radius: 50%;
+      }
+      .floating-widget img {
+        width: 32px;
+        height: 32px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Halo ini tag h1</h1>
+    <h1 id="judul" class="title">Ini Judul</h1>
+    <h1 class="title">Ini Judul 2</h1>
+    <h1 style="color: yellow; font-size: 60px" id="judul" class="title">
+      Ini Judul Inline
+    </h1>
+    <div class="article">
+      <div class="sub-article">
+        <h1>ini judul sub</h1>
+      </div>
+      <h1>ini judul article</h1>
+    </div>
+
+    <section>
+      <div class="box1">
+        <h1 style="border: white 2px solid">ini box 1</h1>
+      </div>
+      <div class="box2">
+        <h1>ini box 2</h1>
+      </div>
+    </section>
+
+    <div>
+      <a href="#">
+        <h2 style="font-size: 60px">Ini Link</h2>
+      </a>
+    </div>
+
+    <a class="floating-widget" href="https://www.google.com/">
+      <img src="whatsapp.png" />
+    </a>
+
+    <script>
+      //   let judul = document.getElementById("judul");
+
+      //   let juduls = document.getElementsByClassName("title");
+      //   let titles = document.querySelectorAll(".title");
+    </script>
+  </body>
+</html>
